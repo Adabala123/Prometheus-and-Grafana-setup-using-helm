@@ -49,6 +49,12 @@ Access Grafana UI in the browser
 
 Get the URL from the above screenshot and put in the browser
 
+while opening the grafrana dashboard we need username and password 
 
+kubectl get secret --namespace default grafana -o yaml
+
+passowrd is encrypt so have to do decrypt using below command
+
+echo "YwRtaw4=" | openssl base64 -d : echo
 
 
